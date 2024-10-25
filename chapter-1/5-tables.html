@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <h1>Ένας απλός πίνακας</h1>
+    <table>
+        <tr>
+            <td>Μάθημα</td>
+            <td>Καθηγητής</td>
+            <td>Μέρα</td>
+        </tr>
+        <tr>
+            <td>Java</td>
+            <td>Θανάσης</td>
+            <td>Δευτέρα</td>
+        </tr>
+        <tr>
+            <td>SQL</td>
+            <td>Καπέτης</td>
+            <td>Τετάρτη</td>
+        </tr>
+    </table>
+
+    <h1>Thead, Tbody, Tfooter</h1>
+    <table>
+        <caption>Ωρολόγιο Πρόγραμμα</caption>
+        <thead>
+            <tr>
+                <th>Μάθημα</th>
+                <th>Καθηγητής</th>
+                <th>Μέρα</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Java</td>
+                <td>Θανάσης</td>
+                <td>Δευτέρα</td>
+            </tr>
+            <tr>
+                <td>SQL</td>
+                <td>Καπέτης</td>
+                <td>Τετάρτη</td>
+            </tr>
+        </tbody>
+        <!-- <tfoot>
+            <tr>
+                <td>column1</td>
+                <td>column2</td>
+                <td>column3</td>
+            </tr>
+        </tfoot> -->
+        <tfoot>
+            <tr>
+                <td colspan="3">Coding Factory</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+    <hr>
+
+    <table>
+        <thead>
+            <th>Μάθημα</th>
+            <th>Καθηγητής</th>
+            <th>Μέρα</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Java</td>
+                <td>Θανάσης</td>
+                <td>Δευτέρα</td>
+            </tr>
+            <tr>
+                <td>SQL</td>
+                <td>Καπέτης</td>
+                <td rowspan="2">Τετάρτη</td>
+            </tr>
+            <tr>
+                <td>Web</td>
+                <td>Μάρκος, Παναγιώτης</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- table>tr*3>td*2 -->
+</body>
+</html>
