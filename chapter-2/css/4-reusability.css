@@ -1,0 +1,22 @@
+body {
+    background-color: lightgray;
+}
+
+.aueb-header {
+    background-color: brown;
+    /* color: white; */
+}
+
+.cf-header {
+    background-color: green;
+    /* color: white; */
+}
+
+.aueb-text {
+    background-color: blue;
+    /* color:white */
+}
+
+.fg-light {
+    color:white;
+}
