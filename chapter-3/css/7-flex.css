@@ -1,0 +1,11 @@
+.container {
+   display: flex;
+   height: 200px;
+   border: 1px solid black; 
+   /* justify-content: space-around; */
+   /* justify-content: space-between; */
+   justify-content: space-evenly;
+   /* align-items: center; */
+   /* align-items: start; */
+   align-items: end;
+}

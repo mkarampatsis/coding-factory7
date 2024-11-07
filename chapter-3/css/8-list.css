@@ -1,0 +1,14 @@
+.container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    border: 1px solid black;
+}
+
+.aueb-img {
+    width: 400px;
+    height: auto;
+}
