@@ -12,3 +12,27 @@
     width: 400px;
     height: auto;
 }
+
+.nav {
+    display: inline-block;
+}
+
+.nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav li:first-child {
+    margin-left: 30px;
+}
+
+.nav a {
+    background-color: aqua;
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: green
+}
