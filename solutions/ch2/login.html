@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+    <!-- container-fluid is the outer blue box -->
+    <div class="container-fluid"> 
+        <!-- container is the inner white box -->
+        <div class="container">
+            <div class="row">
+                <h1 class="text-grey mtop mbottom">Login</h1>
+            </div>  
+            <form>
+                <div class="row">
+                    <input id="loginName" type="email" required placeholder="E-mail">  
+                    <span></span>
+                </div>
+                <div class="row">
+                    <input id="password" type="password" minlength="8" required placeholder="Password"> 
+                </div>
+                <div class="row">
+                    <button type="button">Sign In</button>
+                </div>
+            </form>
+            <div class="row">
+                <a href="#" class="text-grey no-decor">Lost your password?</a>
+            </div>
+        </div>
+        <div class="have-account">
+            <p class="color-light">Don't have an account? 
+                <a class="no-decor" href="#">Sign up here!</a>
+            </p>
+        </div>
+    </div>      
+    
+</body>
+</html>
