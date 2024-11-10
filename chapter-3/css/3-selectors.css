@@ -1,0 +1,22 @@
+h2[id], p[id] {
+    background-color: aquamarine;
+}
+
+a[href="#"] {
+    background-color: blueviolet;
+}
+
+/* symbol ^ starts with "info" */
+*[class^="info"]{
+    color: green   
+}
+
+/* symbol * contains "text" */
+*[class*="text"] {
+    background-color: burlywood;
+}
+
+/* symbol $ ends with title */
+h2[class$="title"]{
+    font-style: italic;
+}

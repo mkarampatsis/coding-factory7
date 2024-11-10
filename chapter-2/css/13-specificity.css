@@ -1,0 +1,23 @@
+p {
+    color: red;
+}
+
+p {
+    color: blue;
+}
+
+#cfText{
+    color: aqua
+}
+
+.cf-text {
+    color: green!important;
+}
+
+p {
+    color: yellow;
+}
+
+/* CSS for Header */
+
+/* End for header */

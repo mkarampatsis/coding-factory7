@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    width:800px;
+    margin: 15px auto;
+    border: 1px solid black;
+}
+
+.webdev-header {
+    padding: 20px 0;
+}
+
+.webdev-text1, .webdev-text2{
+    padding: 5px 10px;
+}
+
+.text-bold{
+    font-weight: bold;
+    background-color: aqua;
+}

@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 1em;
+}
+
+div {
+    margin-top: 30px;
+}
+
+form {
+    width: 80%;
+}
+
+input {
+    width: 250px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="radio"] {
+    width: auto;
+}
+
+input:focus {
+    outline: 1px solid red;
+}
+
+fieldset {
+    width: 250px;
+    margin-left: 30px;
+}
+
+abbr {
+    color: red;
+}
+
+button {
+    margin: 20px 0  0 120px;
+    padding: 10px;
+    background-color: blue;
+}
