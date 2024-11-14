@@ -1,0 +1,33 @@
+:root {
+    --color-aueb: #762124;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.logo > img {
+    height: 120px;
+    width: auto;
+}
+
+header {
+    display: flex;
+    background-color: var(--color-aueb);
+    height: 120px;
+}
+
+nav{
+    width: 700px;
+    
+}
+
+nav > ul {
+    list-style: none;
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

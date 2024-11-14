@@ -18,6 +18,8 @@
 header {
     background-color: var(--color-aueb);
     overflow: hidden;
+    position: sticky;
+    top:0px;
 }
 
 .logo {
