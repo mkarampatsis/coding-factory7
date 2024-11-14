@@ -1,3 +1,7 @@
+:root {
+    --color-aueb: #762124;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -12,7 +16,7 @@
 }
 
 header {
-    background-color: #762124;
+    background-color: var(--color-aueb);
     overflow: hidden;
 }
 
@@ -59,11 +63,33 @@ nav a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .home-title {
     width: 50%;
-    color: #762124;
+    color: var(--color-aueb);
     font-size: 40px;
     font-weight: 600;
+}
+
+.mb-25 {
+    margin-bottom: 25px;
+}
+
+main h2 {
+    text-align: center;
+}
+
+footer {
+    height: 120px;
+    background-color: var(--color-aueb);
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
