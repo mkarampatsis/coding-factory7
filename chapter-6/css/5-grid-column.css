@@ -1,0 +1,13 @@
+div[class^="grid"] {
+    border: 1px solid black;
+}
+
+.container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    gap: 20px
+}
