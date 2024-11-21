@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 30px;
+}
+
+.bg-gray {
+    background-color: #bbb;
+}
+
+.bg-light-gray {
+    background-color: #aaa;
+}
+
+.column-1 {
+    height: 300px;
+    width: 25%;
+    text-align: center;
+    line-height: 300px;
+    float: left;
+}
+
+.column-2 {
+    height: 300px;
+    width: 50%;
+    text-align: center;
+    line-height: 300px;
+    float: left;
+}
+
+footer {
+    clear: both;
+}

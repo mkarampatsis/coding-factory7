@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, footer {
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+}
+
+.bg-light-gray {
+    background-color: #aaa;
+}
+
+.bg-gray {
+    background-color: #bbb;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.column {
+    height: 300px;
+    text-align: center;
+    line-height: 300px;
+}
