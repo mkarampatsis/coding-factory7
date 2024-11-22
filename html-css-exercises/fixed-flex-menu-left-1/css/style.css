@@ -1,0 +1,136 @@
+:root {
+    --white: #f9f9f9;
+    --navy: #002e94;
+    --blue: #083aa9;
+    --wedding: #ffe7cc;
+    --beige: #e1ceb5;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+   flex: 25%; 
+}
+
+main {
+    flex:75%
+}
+
+.bg-navy {
+    background-color: var(--navy);
+}
+
+.bg-blue {
+    background-color: var(--blue);
+}
+
+.bg-wedding {
+    background-color: var(--wedding);
+}
+
+.bg-beige {
+    background-color: var(--beige);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+.border {
+    border-width: 1px;
+    border-style: solid;
+}
+
+.border-black {
+    border-color: black;
+}
+
+.text-wedding {
+    color: var(--wedding);
+}
+
+.text-none {
+    text-decoration: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.ml-1 {
+    margin-left: 1rem;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.m-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.p-1 {
+    padding: 1rem;
+}
+
+.d-flex {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;    
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.d-block {
+    display: block;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.list-style-none {
+    list-style: none;
+}
+
+.link-hover-navy:hover {
+    background-color: var(--navy);
+}
+
+.banner-image {
+    width: 300px;
+    height: auto;
+    border-radius: 10%;
+}
+
+code {
+    font-family:'Courier New', Courier, monospace;
+}
