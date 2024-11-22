@@ -1,0 +1,97 @@
+:root {
+    --white: #f9f9f9;
+    --navy: #002e94;
+    --blue: #083aa9;
+    --wedding: #ffe7cc;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg-navy {
+    background-color: var(--navy);
+}
+
+.bg-blue {
+    background-color: var(--blue);
+}
+
+.bg-wedding {
+    background-color: var(--wedding);
+}
+
+.text-wedding {
+    color: var(--wedding);
+}
+
+.text-none {
+    text-decoration: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.ml-1 {
+    margin-left: 1rem;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.p-1 {
+    padding: 1rem;
+}
+
+.d-flex {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;    
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.d-block {
+    display: block;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.list-style-none {
+    list-style: none;
+}
+
+.link-hover-navy:hover {
+    background-color: var(--navy);
+}
+
+.banner-image {
+    width: 300px;
+    height: auto;
+    border-radius: 10%;
+}
