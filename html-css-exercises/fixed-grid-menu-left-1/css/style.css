@@ -16,12 +16,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
-   flex: 25%; 
-}
+/* header {
+    flex: 25%;
+} */
 
 main {
-    flex:75%;
+    /* flex: 75%; */
     height: 100vh;
     overflow: auto;
 }
@@ -94,6 +94,11 @@ main {
 
 .p-1 {
     padding: 1rem;
+}
+
+.d-grid-template {
+    display: grid;
+    grid-template-columns: 25% 75%;
 }
 
 .d-flex {
