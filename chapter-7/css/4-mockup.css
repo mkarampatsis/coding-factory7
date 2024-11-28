@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+}
+
+/* CSS for Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #762124;
+}
+
+.logo > img {
+    height: 120px;
+    width: auto;
+}
+
+nav {
+    width: 550px;
+    /* background-color: aqua; */
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    list-style: none;
+}
+
+nav > ul > li > a {
+    display: block;
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+} 
+
+nav > ul > li:not(:first-child) > a:hover {
+    background-color: white;
+    color:#762124;
+    transition: all 0.4s;
+}
+
+/* CSS for banner */
+.home-img {
+    background-image: url('../../images/tep-aueb.jpg');
+    height: calc(97vh - 120px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.home-title {
+    width: 55%;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+}
+
+.gap-bottom {
+    margin-bottom: 25px;
+}
+
+/* CSS for Main */
+
+main > h2 {
+    text-align: center;
+}
+
+main section {
+    margin: 10px 15px;
+}
+
+/* CSS for Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    background-color: #762124;
+    align-items: center;
+    padding: 0 10px;
+    color: white;
+}
