@@ -133,10 +133,9 @@ nav .dropdown:hover > .dropdown-content {
     font-size: 1.5rem;
 }
 
-.navbar-toggle .dropdown-content {
+.navbar-toggle .dropdown-content a {
     font-size: 1rem;
 }
-
 
 /* CSS for banner */
 .home-img {
@@ -183,6 +182,15 @@ footer {
     padding: 0 10px;
     color: white;
 }
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
 
 @media(max-width:1000px) {
     nav {

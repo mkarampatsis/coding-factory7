@@ -92,7 +92,18 @@
     </div>
     
     <script>
+        const img = document.querySelector('.home-img');
+        const toggleBtn = document.querySelector('.nav-toggle');
+        const navBarToggle = document.querySelector('.navbar-toggle');
+        const main = document.querySelector('.main');
+        const footer = document.querySelector('.footer');
         
+        toggleBtn.addEventListener('click', function(){
+            // alert("My program");
+            img.classList.toggle('hidden');
+            navBarToggle.classList.toggle('show');
+        })
+
     </script>
 </body>
 </html>
