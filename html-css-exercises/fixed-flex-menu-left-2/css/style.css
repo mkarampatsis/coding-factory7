@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: blue;
+}
+
+.container {
+    background-color: beige;
+    display: flex;
+}
+
+nav {
+    flex:25%;
+    background-color: lightblue;
+    height: 100px;
+    margin-top: 20px;
+}
+
+main {
+    flex: 75%;
+    background-color: brown;
+    margin-top: 20px;
+}
+
+@media (max-width:600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    nav {
+        margin-top: 0;
+    };
+    
+    main {
+        margin-top: 0;
+    }
+}
