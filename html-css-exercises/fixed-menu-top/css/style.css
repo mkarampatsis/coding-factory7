@@ -136,3 +136,84 @@ header {
 code {
     font-family:'Courier New', Courier, monospace;
 }
+
+/* Hamb menu styling */
+.hamb {
+    position: absolute;
+    top:3rem;
+    left: 18rem;
+    cursor: pointer;
+    padding: 10px 10px;
+}
+
+.hamb-line {
+    background-color: var(--white);
+    height: 2px;
+    width: 30px;
+    /* display: block; */
+    display: none;
+    position: relative;
+}
+
+.hamb-line::before, 
+.hamb-line::after {
+    background-color: var(--white);
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+}
+
+.hamb-line::before {
+    top:5px;
+}
+
+.hamb-line::after {
+    top:-5px;
+}
+
+.side-menu:checked ~ nav.active {
+    display: flex;
+}
+
+.side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.side-menu {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .hamb-line {
+        display: block;
+    }
+
+    /* nav ul {
+        flex-direction: column;
+    } */
+
+    .flex-direction-response {
+        flex-direction: column;
+    }
+
+    nav li {
+        text-align: center;
+    }
+
+    nav.active {
+        display: none;
+    }
+}
