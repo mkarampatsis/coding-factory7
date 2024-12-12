@@ -67,9 +67,34 @@ main {
     flex:75%
 }
 
+/* Stepper Styling */
+.stepper-circle {
+    width: 30px;
+    height: 30px;
+    color:var(--white);
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    background-color: var(--lightgrey-300);
+}
+
+.stepper-border-bottom {
+    display: block;
+    content: '';
+    border-bottom: 1px solid var(--lightgrey-300);
+}
+
+.active {
+    background-color: var(--gov-blue);
+}
+
 /* General Styling */
 
 /* Displays */
+.d-block {
+    display: block;
+}
+
 .d-flex {
     display: flex;
     justify-content: space-between;
@@ -81,6 +106,10 @@ main {
 
 .align-center {
     align-items: center;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
 }
 
 /* Backgrounds */
@@ -96,6 +125,10 @@ main {
     background-color: var(--lightgrey-300);
 }
 
+.bg-yellow {
+    background-color: var(--yellow);
+}
+
 /* Text Styling */
 .font-size-075 {
     font-size: .75rem;
@@ -103,6 +136,10 @@ main {
 
 .font-size-1 {
     font-size: 1rem;
+}
+
+.font-size-2 {
+    font-size: 2rem;
 }
 
 .text-lightgrey-200 {
@@ -122,6 +159,11 @@ main {
 }
 
 /* Margins and Paddings */
+.m-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .mr-1 {
     margin-right: 1rem;
 }
@@ -162,6 +204,10 @@ main {
 
 .border-radius-15 {
     border-radius: 15%;
+}
+
+.border-lightgrey-200 {
+    border-color: var(--lightgrey-200);
 }
 
 /* Links - Lists */
