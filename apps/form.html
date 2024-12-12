@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="border-light box-center rounded mt-sm p-5">
+        <div class="mb-sm">
+            <span class="text-serif text-lg text-semibold text-primary">Form</span>   
+        </div>
+        <div>
+            <form id = "form">
+                <div class="mb-xsm">
+                    <label class="text-serif text-md text-bold" for="numberInput">Number</label>
+                </div>
+                <div class="min-h">
+                    <div>
+                        <input class="border-light rounded outline-none p-1 transition-border-color width-lg text-md text-gray" type="text" id="numberInput" name="numberInput" placeholder="Please enter a number" required>
+                    </div>       
+                    <div class="mt-error">
+                        <span id="errorMessage" class="color-error text-md hidden" role="alert">
+                            Number must be greater than 10.
+                        </span>   
+                    </div>                
+                </div>
+                <div class="mt-xsm d-flex">
+                    <button class="btn btn-lg btn-outline-primary rounded" type="submit">Submit</button>
+                </div>                     
+            </form>
+        </div>   
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>
