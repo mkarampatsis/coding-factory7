@@ -74,7 +74,56 @@
                    </div>
                 </div>
             </section>
-            <section class="p-1">heading form</section>
+            <section class="p-1">
+
+                <h2 class="text-center font-size-2 mb-2 mt-2">Στοιχεία Οικοπέδου</h2>
+                <p class="border border-lightgrey-300 bg-lightgrey-200 text-lightgrey-500 p-1">Παρακαλώ εισάγετε στοιχεία οικοπέδου</p>
+
+                <form class="mt-1">
+                    <div class="mb-2">
+                        <span><strong>Εντοπισμός Οικοπέδου:</strong></span>
+                        <input class="ml-1" type="radio" checked="checked" name="fieldRadio" id="kaek">
+                        <label class="ml-05" for="kaek">ΚΑΕΚ</label>
+                        <input class="ml-1" type="radio" name="fieldRadio" id="coordinates">
+                        <label class="ml-05" for="coordinates">Συντεταγμένες(x,y)</label>
+                        <span class="ml-1 info">i</span>
+                    </div>
+
+                    <div class="mb-2">
+                        <p>Παρακαλώ εισάγετε το KAEK του οικοπέδου και πατήστε αναζήτηση</p>
+                        <fieldset>
+                            <legend class="font-size-075 text-lightgrey-500">ΚΑΕΚ*</legend>
+                            <input class="col-12 h-2 no-border pl-1" type="text">
+                        </fieldset>
+                        <span class="text-info">Εισάγετε το ΚΑΕΚ του οικοπέδου</span>
+                    </div>
+
+                    <div class="mb-2 d-flex flex-row">
+                        <div class="col-6">
+                            <fieldset>
+                                <legend class="font-size-075 text-lightgrey-500">Νομός*</legend>
+                                <select class="no-border col-12 h-2 pl-1 bg-white" name="" id="">
+                                    <option value="">Χανιών</option>
+                                    <option value="">Αττικής</option>
+                                    <option value="">Ιωαννίνων</option>
+                                </select>
+                            </fieldset>
+                            <span class="text-info">Επιλέξτε Νομό</span>
+                        </div>
+                        <div class="col-6 ml-1">
+                            <fieldset>
+                                <legend class="font-size-075 text-lightgrey-500">Δήμος*</legend>
+                                <select class="no-border col-12 bg-white pl-1 h-2" name="" id="">
+                                    <option value="">Δήμος 1</option>
+                                    <option value="">Δήμος 2</option>
+                                    <option value="">Δήμος 3</option>
+                                </select>
+                            </fieldset>
+                            <span class="text-info">Επιλέξτε Δήμο</span>
+                        </div>
+                    </div>
+                </form>
+            </section>
         </main>
     </div>
 

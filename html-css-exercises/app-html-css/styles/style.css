@@ -88,6 +88,24 @@ main {
     background-color: var(--gov-blue);
 }
 
+/* Form Styling */
+.info {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: var(--gov-blue);
+    color: var(--lightgrey-200);
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+}
+
+.text-info {
+    color:var(--lightgrey-500);
+    font-size: smaller;
+    padding-left: 1rem;
+}
+
 /* General Styling */
 
 /* Displays */
@@ -121,12 +139,20 @@ main {
     background-color: var(--green);
 }
 
+.bg-lightgrey-200 {
+    background-color: var(--lightgrey-200);
+}
+
 .bg-lightgrey-300 {
     background-color: var(--lightgrey-300);
 }
 
 .bg-yellow {
     background-color: var(--yellow);
+}
+
+.bg-white {
+    background-color: var(--white);
 }
 
 /* Text Styling */
@@ -144,6 +170,10 @@ main {
 
 .text-lightgrey-200 {
     color: var(--lightgrey-200);
+}
+
+.text-lightgrey-500 {
+    color:var(--lightgrey-500);
 }
 
 .text-white {
@@ -168,12 +198,24 @@ main {
     margin-right: 1rem;
 }
 
+.mt-1 {
+    margin-top: 1rem;
+}
+
 .mt-2 {
     margin-top: 2rem;
 }
 
 .mb-1{
     margin-bottom: 1rem;
+}
+
+.ml-05 {
+    margin-left: .5rem;
+}
+
+.ml-1{
+    margin-left: 1rem;
 }
 
 .mb-2 {
@@ -193,6 +235,10 @@ main {
 }
 
 /* Borders */
+.no-border {
+    border: 0;
+}
+
 .border {
    border-style:solid;
    border-width: 1px; 
@@ -210,6 +256,10 @@ main {
     border-color: var(--lightgrey-200);
 }
 
+.border-lightgrey-300 {
+    border-color: var(--lightgrey-300);
+}
+
 /* Links - Lists */
 .list-style-none {
     list-style: none;
@@ -217,4 +267,22 @@ main {
 
 .text-decoration-none {
     text-decoration: none;
+}
+
+/* Width -Height */
+.col-1 {width:8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width:25%;}
+.col-4 {width:33.33%;}
+.col-5 {width:41.66%}
+.col-6 {width:50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width:66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width:100%}
+
+.h-2 {
+    height: 2rem;
 }
