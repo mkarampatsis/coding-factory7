@@ -64,7 +64,9 @@ aside a:visited {
 }
 
 main {
-    flex:75%
+    flex:75%;
+    height: calc(100vh - 105px);
+    overflow: auto;
 }
 
 /* Stepper Styling */
@@ -128,6 +130,10 @@ main {
 
 .flex-grow-1 {
     flex-grow: 1;
+}
+
+.justify-end {
+    justify-content: end;
 }
 
 /* Backgrounds */
@@ -285,4 +291,8 @@ main {
 
 .h-2 {
     height: 2rem;
+}
+
+.h-25 {
+    height: 2.5rem;
 }
