@@ -1,0 +1,25 @@
+.navbar {
+    border-bottom: 1px solid #333333;
+}
+
+.nav-link {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.navbar-brand{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.bg-dark {
+    background-color: #006994!important;
+}
+
+header {
+    background-image: url(../images/header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+}
