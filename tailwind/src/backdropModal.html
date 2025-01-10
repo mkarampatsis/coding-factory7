@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<!-- 
+    Modals or Dialogs:
+
+        A backdrop (A backdrop in web design refers to an overlay or 
+        semi-transparent layer that appears behind a modal, dialog, or popup) 
+        behind a modal can be implemented using this approach.
+        Its primary purpose is to:
+
+        Focus Attention: It dims or obscures the background content, drawing the user's attention 
+        to the modal or popup in the foreground.
+    
+        Prevent Interaction: It often disables interaction with the content underneath the modal 
+        to ensure the user focuses on the modal's content.
+        
+        Fullscreen Navigation:
+
+        A menu or navigation bar that takes over the entire screen.
+        Loading Overlays:
+
+        Display a loader or spinner that prevents user interaction with the underlying content.
+        Fullscreen Images or Videos:
+    -->
+<body>
+    <!-- Backdrop -->
+    <div class="fixed inset-0 bg-black bg-opacity-50 z-10 flex justify-center items-center">
+      <!-- popup -->
+      <div class="w-[70%] h-[70%] bg-white p-5 rounded overflow-auto">
+        Greece,[a] officially the Hellenic Republic,[b] is a country in Southeast Europe. Located on the southern tip of the Balkan peninsula, Greece shares land borders with Albania to the northwest, North Macedonia and Bulgaria to the north, and Turkey to the east. The Aegean Sea lies to the east of the mainland, the Ionian Sea to the west, and the Sea of Crete and the Mediterranean Sea to the south. Greece has the longest coastline on the Mediterranean Basin, featuring thousands of islands. The country comprises nine traditional geographic regions, and has a population of over 10.4 million. Athens is the nation's capital and largest city, followed by Thessaloniki and Patras.
+        Greece is considered the cradle of Western civilisation, being the birthplace of democracy, Western philosophy, Western literature, historiography, political science, major scientific and mathematical principles, theatre, and the Olympic Games. From the eighth century BC, the Greeks were organised into various independent city-states known as poleis (singular polis) that spanned the Mediterranean and Black seas. Philip II of Macedon united most of present-day Greece in the fourth century BC, with his son Alexander the Great rapidly conquering much of the known ancient world from the eastern Mediterranean to northwestern India. The subsequent Hellenistic period saw the height 
+        of Greek culture and influence in antiquity. Greece was annexed by Rome in the second century BC, becoming an integral part of the Roman Empire and its continuation, the Byzantine Empire, which was predominately Greek in culture and language. The Greek Orthodox Church, which emerged in the first century AD, helped shape modern Greek identity and transmitted Greek traditions to the wider Orthodox world. After the Fourth Crusade in 1204, Latin possessions were established in parts of the Greek peninsula, but most of the area fell under Ottoman rule by the mid-15th century.
+        Following a protracted war of independence, which started in 1821, Greece emerged as a modern nation state in 1830. Over the first hundred years, the Kingdom of Greece sought territorial expansion, which was mainly realised in the early 20th century during the Balkan Wars and up until the catastrophic defeat of its Asia Minor Campaign in 1922. The short-lived republic that was established in 1924 was beset by the ramifications of civil strife and the challenge of resettling refugees from Turkey. In 1936 a royalist dictatorship inaugurated a long period of authoritarian rule, marked by military occupation, civil war and military dictatorship. Democracy was restored in 1974–75, 
+        leading to the current parliamentary republic. It was a belligerent on the side of the Greek Cypriots in the Turkish invasion of Cyprus in 1974.
+        Having achieved record economic growth from 1950 through the 1970s, Greece is a developed country with an advanced high-income economy. A founding member of the United Nations, Greece was the tenth member to join what is today the European Union in 1981 and is part of the eurozone. It is a member of other international institutions, including the Council of Europe, NATO (since 1952), the OECD, the WTO, and the OSCE. Greece has a unique cultural heritage, large tourism industry, and prominent shipping sector. The country's rich historical legacy is reflected in part by its 19 UNESCO World Heritage Sites. Greece was the ninth most-visited country in the world in 2023.
+        <br><br>
+        <div class="w-full flex justify-end">
+          <button class="p-4 rounded border border-blue-500 w-[150px] text-blue-500 hover:text-white hover:bg-blue-500">
+            Close
+          </button>
+        </div>  
+      </div>
+    </div>
+
+</body>
+</html>
+
