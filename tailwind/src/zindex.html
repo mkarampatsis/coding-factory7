@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="relative h-64">
+    <div class="absolute inset-0 bg-blue-400 z-0">
+      <p class="text-center text-white pt-24">Background (z-0)</p>
+    </div>
+
+    <div class="absolute inset-10 bg-green-400 z-10">
+      <p class="text-center text-white pt-16">Background (z-10)</p>
+    </div>
+
+    <div class="absolute inset-20 bg-red-400 z-20">
+      <p class="text-center text-white pt-8">Background (z-20)</p>
+    </div>
+
+  </div>
+</body>
+</html>
