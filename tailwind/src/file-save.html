@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        input: "hsl(var(--input))"
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        :root {
+        --input: 200, 100%, 50%; /* Blue for light mode */
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="w-2/3 mx-auto border border-black rounded p-4 mt-4">
+        <h1 class="font-bold text-md">Παρατηρήσεις</h1>
+        <textarea
+            class="mt-5 rounded-md border-gray border outline-none p-2 w-full"
+            rows="6"
+            value="">
+    </textarea>
+    
+      <div class="lg:flex justify-between my-6 items-end">
+        <div class="flex flex-col gap-2 mt-4">
+          <label class="font-bold" for="fileUpload">
+            Ανέβασμα αρχείου
+          </label>
+          <input
+            type="file"
+            name="fileUpload"
+            id="fileUpload"
+          />
+        </div>
+        <button
+            class="text-blue-500 hover:bg-blue-500 hover:text-white flex items-center 
+                justify-center rounded-md font-medium transition-colors 
+                border border-input h-10 px-4 py-2 mt-5 w-64 text-xs"
+        >
+            <svg
+                width="15"
+                height="16"
+                viewBox="0 0 15 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <g clipPath="url(#clip0_126_119)">
+                <path
+                    d="M2.14286 0.416626C0.960938 0.416626 0 1.38824 0 2.58329V13.4166C0 14.6117 0.960938 15.5833 2.14286 15.5833H12.8571C14.0391 15.5833 15 14.6117 15 13.4166V5.20022C15 4.6247 14.7757 4.07288 14.3739 3.66663L11.7857 1.0497C11.3839 0.643449 10.8382 0.416626 10.269 0.416626H2.14286ZM2.14286 3.66663C2.14286 3.06741 2.62165 2.58329 3.21429 2.58329H9.64286C10.2355 2.58329 10.7143 3.06741 10.7143 3.66663V5.83329C10.7143 6.43251 10.2355 6.91663 9.64286 6.91663H3.21429C2.62165 6.91663 2.14286 6.43251 2.14286 5.83329V3.66663ZM7.5 9.08329C8.06832 9.08329 8.61336 9.31157 9.01523 9.7179C9.41709 10.1242 9.64286 10.6753 9.64286 11.25C9.64286 11.8246 9.41709 12.3757 9.01523 12.782C8.61336 13.1884 8.06832 13.4166 7.5 13.4166C6.93168 13.4166 6.38663 13.1884 5.98477 12.782C5.58291 12.3757 5.35714 11.8246 5.35714 11.25C5.35714 10.6753 5.58291 10.1242 5.98477 9.7179C6.38663 9.31157 6.93168 9.08329 7.5 9.08329Z"
+                    fill="currentColor"
+                />
+                </g>
+            </svg>
+    
+            <span class="ml-2">Αποθήκευση</span>
+        </button>
+      </div>
+    </div>
+    
+</body>
+</html>
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+<body>
+    
+    <div class="mx-auto p-10 mt-10 w-2/5 border border-gray-300 rounded-md">
+        <div class="mb-4">
+            <span class="font-serif font-medium text-4xl text-blue-500">Form</span>   
+        </div>
+        <div>
+            <form id="form">
+                <div class="mb-2">
+                    <label class="font-serif font-extrabold text-2xl cf-text-bold" for="numberInput">Number</label>
+                </div>
+                <div class="min-h-20">
+                    <div class="">
+                        <input class="w-full font-sans font-normal text-xl text-slate-700 placeholder:text-slate-500 border border-gray-400 rounded-lg outline-0 p-2 focus:ring focus:ring-blue-700 
+                                    focus:outline-none transition-colors duration-1000" 
+                                type="text" id="numberInput" name="numberInput" placeholder="Please enter a number" required>
+                    </div>              
+                    <div>
+                        <span id="errorMessage" class="font-sans font-normal text-red-500 hidden" role="alert">
+                            Number must be greater than 10.
+                        </span>   
+                    </div>                
+                </div>
+                <div class="w-full flex justify-end">
+                    <button class="px-4 py-2 font-bold text-blue-500 border border-2 border-blue-500 rounded hover:bg-blue-500 hover:text-white transitions-colors duration-1000" 
+                            type="submit">
+                            Submit
+                    </button>
+                </div>                     
+            </form>
+        </div>   
+    </div>
+    
+</body>
+</html>
+ <script src="form.js"></script>
