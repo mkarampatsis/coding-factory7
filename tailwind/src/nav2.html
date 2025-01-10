@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind Responsive Nav with Submenus</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Navbar -->
+  <nav class="bg-white border-b border-gray-200">
+    
+    <!-- Menu max 80rem-->
+    <div class="flex justify-between items-center h-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <a href="https://codingfactory.aueb.gr/" target="_blank"><img class="h-16" src="../../../img/cf-2.png" 
+          alt=""></a>
+      </div>
+
+      <!-- Toggle Button -->
+      <div class="md:hidden">
+        <button id="nav-toggle" class="text-gray-500 hover:text-gray-900 focus:outline-none focus:ring-2 
+            focus:ring-gray-300">
+          <svg id="menu-open" class="h-6 w-6 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+          <svg id="menu-close" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>         
+        </button>
+      </div>
+
+      <!-- Navigation Links -->
+      <div id="nav-menu" class="hidden md:flex md:items-center space-x-4">
+        <div class="group relative">
+          <a
+            href="#"
+            class="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium flex 
+              items-center relative group"
+          >
+            Services
+            <!-- Down Arrow - chevron -->
+            <svg
+              class="ml-1 h-4 w-4 text-gray-700 group-hover:text-gray-900 
+                transition-transform transform group-hover:rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+            <!-- Underline -->
+            <span
+              class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-1000 
+                group-hover:w-full"
+            ></span>
+          </a>
+          <!-- Submenu -->
+          <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-0 w-40">
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Web Design</a>
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">SEO</a>
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Marketing</a>
+          </div>
+        </div>
+          
+        <a href="#" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">About</a>
+        <a href="#" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+      </div>
+    </div>
+      
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden">
+      <div class="block px-4 py-2">
+        <a href="#" class="block text-gray-700 hover:text-gray-900 py-2">Home</a>
+      </div>
+      <!-- Mobile Submenu -->
+      <div class="block px-4 py-2">
+        <button id="submenu-toggle" class="flex items-center justify-between w-full text-gray-700 
+            hover:text-gray-900 py-2">
+          Services
+          <svg id="submenu-icon" class="h-5 w-5 transform transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div id="submenu" class="hidden ml-4 mt-2">
+          <a href="#" class="block text-gray-700 hover:text-gray-900 py-1">Web Design</a>
+          <a href="#" class="block text-gray-700 hover:text-gray-900 py-1">SEO</a>
+          <a href="#" class="block text-gray-700 hover:text-gray-900 py-1">Marketing</a>
+        </div>
+      </div>
+      <a href="#" class="block text-gray-700 hover:text-gray-900 px-4 py-2">About</a>
+      <a href="#" class="block text-gray-700 hover:text-gray-900 px-4 py-2">Contact</a>
+    </div>
+  </nav>
+
+  <script>
+    // JavaScript for mobile menu toggle
+    const navToggle = document.getElementById('nav-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const submenuToggle = document.getElementById('submenu-toggle');
+    const submenu = document.getElementById('submenu');
+    const menuOpenIcon = document.getElementById('menu-open');
+    const menuCloseIcon = document.getElementById('menu-close');
+    const submenuIcon = document.getElementById('submenu-icon');
+
+    navToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      menuOpenIcon.classList.toggle('hidden');
+      menuCloseIcon.classList.toggle('hidden');
+    });
+
+    submenuToggle.addEventListener('click', () => {
+      submenu.classList.toggle('hidden');
+      submenuIcon.classList.toggle('rotate-180');
+    });
+  </script>
+
+</body>
+</html>
