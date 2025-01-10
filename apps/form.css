@@ -35,10 +35,6 @@
     padding: 2.5rem;
 }
 
-.text-serif {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
 .text-lg {
     font-size: 1.7rem;
 }
@@ -49,6 +45,15 @@
 
 .text-primary {
     color: var(--color-primary)
+}
+
+.text-serif {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.text-sans {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
+                    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 
