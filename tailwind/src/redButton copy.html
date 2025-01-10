@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            input: "hsl(var(--input))"
+          }
+          
+        }
+      }
+    }
+  </script>
+  <style>
+    :root {
+      --input: 200, 100%, 50%; /* Blue light*/
+    }
+  </style>
+</head>
+<body>
+  
+  <button class="text-red-700 hover:bg-red-700 hover:text-white flex 
+                justify-center items-center border border-red-700 rounded-md
+                w-32 h-10 mt-5 ml-2 transition-colors duration-300 text-sm space-x-2 px-5 py-2">
+    <svg
+        xmlns="http://www.w3.org/2000/svg"              
+        viewBox="0 0 118.53 135.47"
+    >
+        <g transform="translate(-94.721 -45.508)">
+            <path d="m130.49 50.191c1.4288-2.884 4.3656-4.6831 7.5671-4.6831h31.856c3.2015 0 6.1383 1.7992 7.5671 4.6831l1.905 3.7835h25.4c4.6831 0 8.4667 3.7835 8.4667 8.4667s-3.7835 8.4667-8.4667 8.4667h-101.6c-4.6831 0-8.4667-3.7835-8.4667-8.4667s3.7835-8.4667 8.4667-8.4667h25.4zm-27.305 29.184h101.6v84.667c0 9.3398-7.5936 16.933-16.933 16.933h-67.733c-9.3398 0-16.933-7.5936-16.933-16.933zm25.4 16.933c-2.3283 0-4.2333 1.905-4.2333 4.2333v59.267c0 2.3283 1.905 4.2333 4.2333 4.2333s4.2333-1.905 4.2333-4.2333v-59.267c0-2.3283-1.905-4.2333-4.2333-4.2333zm25.4 0c-2.3283 0-4.2333 1.905-4.2333 4.2333v59.267c0 2.3283 1.905 4.2333 4.2333 4.2333s4.2333-1.905 4.2333-4.2333v-59.267c0-2.3283-1.905-4.2333-4.2333-4.2333zm25.4 0c-2.3283 0-4.2333 1.905-4.2333 4.2333v59.267c0 2.3283 1.905 4.2333 4.2333 4.2333s4.2333-1.905 4.2333-4.2333v-59.267c0-2.3283-1.905-4.2333-4.2333-4.2333z"
+            fill="currentColor"
+        />
+        </g>
+    </svg>
+    <span>Διαγραφή</span>
+
+  </button>
+
+</body>
+</html>
