@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+       /* The switch container */
+        .switch {
+          position: relative;
+          display: inline-block;
+          width: 34px;
+          height: 20px;
+        }
+
+        /* Hide the default checkbox */
+        .switch input {
+          opacity: 0;
+          width: 0;
+          height: 0;
+        }
+
+      /* The slider */
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+      }
+
+      /* Slider before round modification */
+      .slider::before {
+          position: absolute;
+          content: "";
+          height: 14px;
+          width: 14px;
+          left: 3px;
+          bottom: 3px;
+          background-color: white;
+          transition: 0.4s;       /* applied on the element whose property is being animated*/
+          -webkit-transition: 0.4s; /* for older versions chrome and safari*/
+          border-radius: 34px; /* Optional, for rounded effect */
+      }
+
+      /* When the checkbox is checked */
+      input:checked + .slider {
+        background-color: #4caf50;
+      }
+
+        /* When the checkbox is checked, move the slider */
+        input:checked + .slider::before {   /* selects first next sibling */
+            transform: translateX(14px);
+            -webkit-transform: translateX(14px); /* Older versions of Safari and Chrome */
+            -ms-transform: translateX(14px);  /* Older versions of IE before IE9 */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="w-1/2 mx-auto rounded-md border-2 p-8 lg:p-12 space-y-6 lg:space-y-12 mt-2">
+        <div class="flex items-center justify-between">
+          
+          <h2 class="text-md font-bold text-blue-500">
+            Γραμμή Ειδοποίησης
+          </h2>
+          
+          <div class="flex items-center space-x-2">
+            <h2 class="text-sm font-semibold text-blue-500">
+              Ενεργοποίηση Ειδοποίησης
+            </h2>
+  
+            <div>
+              <label class="switch flex items-center">
+                <input
+                  id="toggleCheckbox"
+                  type="checkbox"             
+                />
+                <span class="slider rounded-full"></span> 
+              </label>
+            </div>
+        </div>
+        
+      </div>
+        <div class="flex w-full flex-col space-y-2">
+          <label
+            for="top_bar_message"
+            class="block text-sm font-medium leading-none text-blue-500"
+          >
+            Μήνυμα Ειδοποίησης
+          </label>
+          <input
+            class="px-2 py-3 text-sm rounded-md border border-gray h-10 disabled:opacity-50 disabled:cursor-not-allowed"
+            type="text"
+            id="topBarMessage"
+            value=""
+            disabled
+          />
+        </div>
+      </div>
+
+      <script>
+        document.getElementById("toggleCheckbox").addEventListener("change", function () {
+          const messageBox = document.getElementById("topBarMessage");
+          messageBox.disabled = !this.checked; // Enable when checked, disable when unchecked
+        });
+      </script>
+</body>
+</html>
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    boxShadow: {
+                        custom: "0px 4px 20px 0px #00000026",
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    
+    <div class="relative">
+        <!-- Circle -->
+        <div class="w-10 h-10 bg-blue-500 rounded-full transform hover:translate-x-10">
+          <!-- The circle is moved on hover by 2.5rem (40px) to the right. No duration, defaut is 0 -->
+        </div>
+    </div>
+
+    <div class="relative group w-64 h-14 border-2 border-gray-500 overflow-hidden flex items-center rounded-full">
+        <!-- Circle -->
+        <div class="w-10 h-10 bg-green-700 rounded-full transform translate-x-0 
+            transition-transform duration-500 ease-linear group-hover:translate-x-[13rem]">
+          <!-- The circle will move on hover, transition applied with duration of 0.5sec and ease-linear-->
+        </div>
+    </div>
+
+</body>
+</html>
+

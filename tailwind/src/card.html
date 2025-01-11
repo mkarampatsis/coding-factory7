@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    
+  <div class="py-8 px-8 max-w-sm mt-2 mx-auto space-y-2 bg-white rounded-xl shadow-lg 
+              sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:gap-x-6">
+    
+    <div>
+      <img class="mx-auto h-24 rounded-full sm:shrink-0" 
+          src="../../../img/persona.avif" 
+          alt="Profile Image" 
+      />
+    </div>
+    
+    <div class="text-center space-y-2 sm:text-left">
+      <div class="space-y-0.5">
+        <p class="text-lg text-black font-semibold"
+        >
+          Athanassios Androutsos
+        </p>  
+        <p class="text-slate-500 font-medium">
+          Senior Software Engineer
+        </p>
+      </div>
+      <div>
+        <button class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border 
+        border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent 
+        focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2"
+      >
+        More Info
+      </button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+

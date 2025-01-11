@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    boxShadow: {
+                        custom: "0px 4px 20px 0px #00000026",
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    
+    <div class="max-w-sm mx-auto mt-5">
+        <div class="bg-white rounded-lg overflow-hidden shadow-md transform transition duration-300 hover:scale-105 
+                    hover:shadow-xl">
+          <!-- the media element scales its content to fill the container while maintaining its aspect ratio.
+           Any parts of the media that don't fit within the container are cropped -->
+          <img    
+            class="object-cover" 
+            src="../img/AUEB-pantone-HR.jpg"
+            alt="AUEB Image"
+          />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">Coding Factory</h3>
+            <p class="text-gray-600 mt-2">
+              The best educational program in Software Engineering. 
+              It provides professional skills.
+            </p>
+            <a class="inline-block cursor-pointer mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 
+                            transition-colors duration-200"
+               href="https://codingfactory.aueb.gr/" target="_blank"
+            >
+              Read More
+            </a>
+          </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
