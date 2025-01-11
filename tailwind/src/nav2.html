@@ -14,8 +14,8 @@
     <!-- Menu max 80rem-->
     <div class="flex justify-between items-center h-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Logo -->
-      <div class="flex items-center">
-        <a href="https://codingfactory.aueb.gr/" target="_blank"><img class="h-16" src="../../../img/cf-2.png" 
+      <div class="h-16 flex items-center">
+        <a href="https://codingfactory.aueb.gr/" target="_blank"><img class="h-14" src="../../../img/cf-2.png" 
           alt=""></a>
       </div>
 
@@ -23,12 +23,12 @@
       <div class="md:hidden">
         <button id="nav-toggle" class="text-gray-500 hover:text-gray-900 focus:outline-none focus:ring-2 
             focus:ring-gray-300">
-          <svg id="menu-open" class="h-6 w-6 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-          <svg id="menu-close" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>         
+          <svg id="menu-open" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg> 
+          <svg id="menu-close" class="h-6 w-6 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>             
         </button>
       </div>
 
@@ -37,14 +37,13 @@
         <div class="group relative">
           <a
             href="#"
-            class="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium flex 
-              items-center relative group"
+            class="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium flex items-center"
           >
             Services
             <!-- Down Arrow - chevron -->
             <svg
               class="ml-1 h-4 w-4 text-gray-700 group-hover:text-gray-900 
-                transition-transform transform group-hover:rotate-180"
+                     transition-transform transform group-hover:rotate-180 duration-300"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -55,11 +54,11 @@
             <!-- Underline -->
             <span
               class="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-1000 
-                group-hover:w-full"
+                     group-hover:w-full"
             ></span>
           </a>
           <!-- Submenu -->
-          <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-0 w-40">
+          <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md w-40">
             <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Web Design</a>
             <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">SEO</a>
             <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Marketing</a>
